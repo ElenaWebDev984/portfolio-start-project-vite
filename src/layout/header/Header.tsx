@@ -1,32 +1,16 @@
 import styled from 'styled-components';
+import {Logo} from '../../components/logo/Logo.tsx';
+import {Menu} from '../../components/menu/Menu.tsx';
 
 export const Header = () => {
     return (
         <StyledHeader>
-            <a href="">
-                <img src="" alt=""/>
-            </a>
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">#home</a>
-                    </li>
-                    <li>
-                        <a href="">#works</a>
-                    </li>
-                    <li>
-                        <a href="">#about-me</a>
-                    </li>
-                    <li>
-                        <a href="">#contacts</a>
-                    </li>
-                </ul>
-            </nav>
+            <Logo />
+            <Menu />
         </StyledHeader>
     );
 };
 
 const StyledHeader = styled.header`
-    background-color: #67e5b4;
+    background-color: #c0c7c4;
 `
