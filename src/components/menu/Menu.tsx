@@ -1,7 +1,8 @@
+import styled from 'styled-components';
+
 export const Menu = () => {
     return (
-        <div>
-            <nav>
+        <StyledMenu>
                 <ul>
                     <li>
                         <a href="">#home</a>
@@ -16,9 +17,15 @@ export const Menu = () => {
                         <a href="">#contacts</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
+            </StyledMenu>
+
     );
 };
 
-export default Menu;
+
+const StyledMenu = styled.nav`
+    ul {
+        display: flex;
+        gap: 30px;
+    }
+`
