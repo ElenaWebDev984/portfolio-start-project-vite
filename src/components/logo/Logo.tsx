@@ -1,12 +1,12 @@
+import {Icon} from '../icon/Icon.tsx';
 
 export const Logo = () => {
     return (
         <div>
             <a href="">
-                <img src="" alt=""/>
+                <Icon iconId={'logo-default'} />
             </a>
         </div>
     );
 };
 
-export default Logo;
